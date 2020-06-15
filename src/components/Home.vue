@@ -77,7 +77,8 @@
           //是否被折叠
           isCollapse:false,
           //是否被激活
-          activePath:''
+          activePath:'',
+        
 
         }
       },
@@ -93,7 +94,7 @@
           },
           //获取所有的菜单
         async  getMenuList(){
-            const{data:res} = await this.$http.get('menus')      //解构响应中的data并且重命名为res
+            const{data:res} = await this.$http.get('menusById/'+sessionStorage.getItem('id'))      //解构响应中的data并且重命名为res
             if(res.meta.status !==200) return this.$message.error(res.meta.msg)
             this.menuList = res.data
             console.log(res)
