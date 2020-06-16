@@ -14,7 +14,7 @@
      <el-row :gutter="20">
         <el-col :span="8">
           <el-input placeholder="请输入内容">
-            <!-- <el-button @click="" slot="append" icon="el-icon-search"></el-button> -->
+            <el-button  slot="append" icon="el-icon-search"></el-button>
           </el-input>
         </el-col>
 
@@ -122,6 +122,13 @@
 
 <script>
 export default {
+
+
+ created(){
+      this.getDepartList()
+  },
+
+  
   data() {
     // 验证手机号的验证规则
     var checkMobile = (rule, value, cb) => {
@@ -173,9 +180,7 @@ export default {
 
     }
   },
-  created(){
-      this.getDepartList()
-  },
+ 
   methods: {
     // 监听 pagesize 改变的事件
     handleSizeChange(newSize) {

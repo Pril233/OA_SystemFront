@@ -6,14 +6,20 @@ import Welcome from '../components/Welcome.vue'
 import Users from '../components/user/Users.vue'
 import Departs from '../components/depart/depart.vue'
 
-import childrenText from '../components/test/componentText.vue'
-import cardTest from '../components/test/cardTest.vue'
 
 import postList from '../components/post/postList.vue'
 import post from '../components/post/post.vue'
-import postCard from '../components/post/postCard.vue'
-import addPostDialog from '../components/post/addPostDialog.vue'
-import editPostDialog from '../components/post/editPostDialog.vue'
+
+import password from '../components/personal/password.vue'
+import userInfo from '../components/personal/userInfo.vue'
+
+import fileUp from '../components/activity/fileUp.vue'
+import fileDown from '../components/activity/fileDown.vue'
+
+import anno from '../components/anno/announcement.vue'
+import annoView from '../components/anno/ViewAnnouncement.vue'
+
+
 
 
 Vue.use(Router)
@@ -33,17 +39,23 @@ export default new Router({
       redirect:'/welcome',
       children:[{path:'/welcome',component:Welcome},{path:'/users',component:Users},
         {path:'/departs',component:Departs},
-        {path:'/posts',component:post}]
+        {path:'/posts',component:post},
+        {path:'/password',component:password},
+        {path:'/userInfo',component:userInfo},
+         {path:'/fileUp',component:fileUp},
+         {path:'/fileDown',component:fileDown},
+         {path:'/anno',component:anno},
+         {path:'/annos',component:annoView},
+         
+
+      ]
     },
 
     {path:'/postList',component:postList},
-    {path:'/post',component:post},
-    {path:'/postCard',component:postCard},
-    {path:'/addPostDialog',component:addPostDialog},
-    {path:'/editPostDialog',component:editPostDialog}
 
 
-    /*{path:'/childrenText',component:childrenText},
-    {path:'/cardTest',component:cardTest}*/
+    // {path:'/childrenText',component:childrenText},
+    
+     {path:'/password',component:password}
   ]
 })
