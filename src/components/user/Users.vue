@@ -12,11 +12,6 @@
       <el-card class="box-card">
 
         <el-row :gutter="20">
-          <el-col :span="8">
-            <el-input placeholder="请输入内容">
-              <el-button slot="append" icon="el-icon-search"></el-button>
-            </el-input>
-          </el-col>
           <el-col :span="4">
             <el-button type="primary" @click="addDialogVisible = true">添加用户</el-button>
           </el-col>
@@ -150,7 +145,7 @@
           <el-form :model="editForm" :rules="addFormRules"
                    ref="editFormRef" label-width="70px" >
     <el-form-item label="用户名" prop="username">
-      <el-input v-model="editForm.username"  disabled="false"></el-input>
+      <el-input v-model="editForm.username"  disabled></el-input>
     </el-form-item>
     <el-form-item label="姓名" prop="name">
       <el-input v-model="editForm.name"></el-input>

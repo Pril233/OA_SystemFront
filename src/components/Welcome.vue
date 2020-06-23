@@ -1,6 +1,6 @@
 <template>
-    <div>
-      <h3>Welcome</h3>
+   <div class="size">
+        <img src="../assets/welcome3.png" alt="">
     </div>
 </template>
 
@@ -11,5 +11,9 @@
 </script>
 
 <style scoped>
-
+.size{
+    margin-left:120px;
+    margin-top:70px;
+ 
+}
 </style>

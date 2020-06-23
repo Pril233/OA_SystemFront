@@ -6,7 +6,7 @@
     border stripe
     >
     <el-table-column
-      prop="id"
+      type="index"
       label="id"
       width="180">
     </el-table-column>
@@ -107,7 +107,7 @@
           if(res.meta.status != 200){
             return this.$message.error('删除职位失败')
           }
-          this.$message.error('删除职位成功')
+          this.$message.success('删除职位成功')
           this.refresh()
     }
 

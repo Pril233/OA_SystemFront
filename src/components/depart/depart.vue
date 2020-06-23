@@ -12,11 +12,6 @@
     <el-card>
       <!--搜索区域-->
      <el-row :gutter="20">
-        <el-col :span="8">
-          <el-input placeholder="请输入内容">
-            <el-button  slot="append" icon="el-icon-search"></el-button>
-          </el-input>
-        </el-col>
 
         <el-col :span="4">
           <el-button type="primary" @click="addDialogVisible = true">添加部门</el-button>
@@ -27,7 +22,7 @@
       <el-table :data="departList" border stripe>
         <!-- 用label来指定列的名称 用prop来指定列的值 -->
         <!-- type='index' 意思是添加索引列 -->
-        <el-table-column label="id" prop="id"></el-table-column>
+        <el-table-column label="id" type="index"></el-table-column>
         <el-table-column label="部门名称" prop="name"></el-table-column>
         <el-table-column label="管理员" prop="manager"></el-table-column>
         <el-table-column label="电话" prop="tel"></el-table-column>

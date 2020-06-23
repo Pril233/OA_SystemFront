@@ -6,11 +6,7 @@
 
   <el-card class="box-card">
     <el-row :gutter="20">
-      <el-col :span="8">
-        <el-input placeholder="请输入内容">
-          <el-button slot="append" icon="el-icon-search"></el-button>
-        </el-input>
-      </el-col>
+
       <el-col :span="4">
         <el-button type="primary" @click="addChild">添加职位</el-button>
       </el-col>

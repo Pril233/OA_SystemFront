@@ -10,15 +10,7 @@
 
     <!-- 卡片区域 -->
     <el-card>
-      <!--搜索区域-->
-     <el-row :gutter="20">
-        <el-col :span="8">
-          <el-input placeholder="请输入内容">
-            <el-button slot="append" icon="el-icon-search"></el-button>
-          </el-input>
-        </el-col>
 
-      </el-row>
 
 
       <!-- 文件列表区 -->
